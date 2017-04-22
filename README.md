@@ -101,7 +101,7 @@ Brakes is a circuit breaker library for Node. A circuit breaker provides latency
     });
   }
 
-  function fallbackCall(foo){
+  function fallbackCall(err, foo){
     return new Promise((resolve, reject) =>{
       resolve('I always succeed');
     });
@@ -130,7 +130,7 @@ Brakes is a circuit breaker library for Node. A circuit breaker provides latency
     });
   }
 
-  function fallbackCall(foo){
+  function fallbackCall(err, foo){
     return new Promise((resolve, reject) =>{
       resolve('I always succeed');
     });
